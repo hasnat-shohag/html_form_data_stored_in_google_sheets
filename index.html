@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Form Data Stored in Google Sheets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://img.icons8.com/color/48/000000/form.png">
+
+    <meta charset="UTF-8">
+    <meta name="robots" content="index, follow">
+
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="5000000">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+
+    <meta name="keywords" content="class one, html learn">
+    <meta name="description" content="you learn every things about html">
+    <meta name="author" content="mr abdul kuddus">
+    <meta name="copyrigth" content="www.mysite.com">
+    <meta name="revisit" content="5 days">
+
+    <meta property="og:title" content="form data stored in google sheets" />
+    <meta property="og:site_name" content="adfas" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://" />
+    <meta property="og:image" content="http://" />
+    <meta property="og:image:width" content="600" />
+    <meta property="og:image:height" content="315" />
+
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="http://">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="contact_form">
+        <form method="POST" autocomplete="off" name="google-sheet">
+            <div class="row">
+                <div class="input_group">
+                    <input type="text" name="name" id="name" required>
+                    <label for="name"><i class="fas fa-user"></i> Student Id</label>
+                </div>
+                <div class="input_group">
+                    <input type="number" name="number" id="number" required>
+                    <label for="number"><i class="fas fa-phone-square-alt"></i> Phone No</label>
+                </div>
+            </div>
+
+            <div class="input_group">
+                <input type="email" name="email" id="email" required>
+                <label for="email"><i class="fas fa-envelope"></i> Email Id</label>
+            </div>
+            <div class="input_group">
+                <textarea id="message" name="message" rows="8" required></textarea>
+                <label for="message"><i class="fas fa-comments"></i> Your Message</label>
+            </div>
+            <div class="input_group">
+                <input title="Upload only pdf or doc file" type="file" name="upload" id="file" accept="application/pdf,application/vnd.ms-excel">
+                <label for="file"><i class="fas fa-file-pdf"></i> Attach File</label>
+            </div>
+            <div class="button_grp">
+                <button type="submit">SUBMIT <i class="fas fa-paper-plane"></i> </button>
+                <button type="reset">RESET</button>
+            </div>
+        </form>
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer">
+    </script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
